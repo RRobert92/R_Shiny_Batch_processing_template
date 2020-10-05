@@ -1,5 +1,5 @@
 # Open-Source R Shiny Batch processing template
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/RRobert92/R_Shiny_Batch_processing_templates)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/RRobert92/R_Shiny_Batch_processing_template)
 ![GitHub top language](https://img.shields.io/github/languages/top/RRobert92/R_Shiny_Batch_processing_template)
 ![GitHub](https://img.shields.io/github/license/RRobert92/R_Shiny_Batch_processing_template)
 ![GitHub Release Date](https://img.shields.io/github/release-date/RRobert92/MR_Shiny_Batch_processing_template)
