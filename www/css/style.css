@@ -1,0 +1,408 @@
+/*
+################################################################################
+# Shiny CSS
+#
+# (c) 2019 Kiewisz
+# This code is licensed under GPL V3.0 license (see LICENSE.txt for details)
+#
+# Author: Robert Kiewisz
+# Created: 2020-10-05
+################################################################################
+*/
+
+/* 
+# Shiny Server  ----------------------------------------------------------------
+*/
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+/*
+# CSS layout styles  ------------------------------------------------------------
+*/
+
+.l-box {
+    padding: 0.5em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+/*
+# CSS button  -------------------------------------------------------------------
+*/
+
+.asga-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+.asga-button-primary {
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.sweet-alert button.cancel{
+  background-color: #f8bb86;
+}
+ /*
+# CSS Main Page  -----------------------------------------------------------------
+*/
+
+.container-fluid{
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto
+}
+.nav{
+    float: right;
+    margin: auto;
+}
+.navbar-header{
+    float: left;
+    padding-left: 15px
+}
+
+ /*
+# CSS Splash  -------------------------------------------------------------------
+*/
+
+.splash-container-GS {
+    background: #fdfdfd;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 94.3%;
+    top: 0;
+    left: 0;
+}
+
+.splash-container {
+    background: #1f8dd6;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash-container-report{
+    background: #fdfdfd;
+    padding-top: 30%;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.splash-content-report{
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.splash-content {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-GS{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.table-GS{
+    width: 45%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 350px; left: 0; bottom: 0; right: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+.table-GS-Center{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form-group {
+  margin: auto;
+}
+
+.splash-input-GS{
+  width: 63%;
+  padding-left: 31%;
+  margin-left: 3%;
+}
+
+.splash-input-GS-test{
+  max-width: 100%;
+  margin: auto;
+  float: none;
+  width: 50%;
+  padding: 10px;
+}
+
+.splash-input-GS-row:after{
+  width: 50%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-head-GS{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.splash-subhead-GS{
+  color: black;
+   letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.splash-subhead-Report{
+  color: black;
+   letter-spacing: 0.05em;
+    opacity: 0.8;
+    font-size: 150%;
+    margin-top: 5%;
+}
+
+.splash-report{
+  width: 65%;
+  height: 80%;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  top: 300px; bottom: 0; right: 0; left: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.splash-report-code {
+    background: rgba(0,0,0,0.08);
+    color: black;
+    border-radius: 10px;
+    font-size: 80%;
+    text-align: left;
+    padding: 10px;
+    width: 90%;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+
+/*
+# CSS Wrappers  -------------------------------------------------------------------
+*/
+
+.content-wrapper {
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+
+}
+
+.content {
+    padding: 1em 1em 3em;
+}
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.content-head-ribbon {
+    color: white;
+}
+
+.content-subhead {
+    color: #1f8dd6;
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+
+.footer {
+    background: #111;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+}
+.footer-report{
+    background: #111;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.shiny-input-container:not(.shiny-input-container-inline) {
+  width: 300px;
+  max-width: 100%;
+  margin: 5px;
+}
+ /*
+# CSS MEDIA QUERIES  -------------------------------------------------------------------
+*/
+
+@media (min-width: 60em) {
+
+    body {
+        font-size: 13px;
+    }
+    
+    .shiny-input-container:not(.shiny-input-container-inline) {
+      width: 300px;
+      max-width: 100%;
+      margin: 10px;
+    }
+    
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    .splash {
+        width: 65%;
+        height: 50%;
+    }
+    .splash-GS {
+        width: 55%;
+        height: 75%;
+    }
+    .splash-report{
+      height: 50%;
+    }
+    .splash-report-code{
+      margin-left: 45px;
+    }
+    .splash-container-report{
+    padding-top: 16%;
+    padding-bottom: 0px;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+      
+    }
+    .splash-content-report{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    }
+    
+    .splash-head {
+        font-size: 250%;
+    }
+    .splash-head-GS {
+        font-size: 250%;
+    }
+    .splash-input-GS{
+      float: left;
+    }
+    .table-GS{
+      height: 50%;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+
+}
