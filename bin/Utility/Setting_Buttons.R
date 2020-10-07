@@ -44,13 +44,21 @@ Setting_Buttons_UI <- function(id) {
       right = TRUE,
       status = "info"
     )
+    #Add new button
+    #materialSwitch(
+    #  inputId = ns("button name"),
+    #  label = "Button label shown in the shiny",
+    #  value = FALSE, # start value TRUE button is on FALSE off
+    #  right = TRUE,
+    #  status = "info" # color thame 
+    #)
   )
 }
 
-# Setting_BUttons_Server  -------------------------------------------------------
+# Setting_BUttons_Server  ------------------------------------------------------
 Setting_Buttons_Server <- function(input, output, session) {
   
-  # Reactivity for IKD ----------------------------------------------------------
+  # Reactivity for IKD ---------------------------------------------------------
   observeEvent(input$`IKD`, {
     All_Closed()
     Any_One()
@@ -85,7 +93,7 @@ Setting_Buttons_Server <- function(input, output, session) {
     })
   })
   
-  # Reactivity for fiber area ---------------------------------------------------
+  # Reactivity for fiber area --------------------------------------------------
   observeEvent(input$`Fiber_Area`, {
     All_Closed()
     Any_One()
@@ -119,7 +127,7 @@ Setting_Buttons_Server <- function(input, output, session) {
     })
   })
   
-  # Reactivity for MT interaction button --------------------------------
+  # Reactivity for MT interaction button ---------------------------------------
   observeEvent(input$`MT_Interaction`, {
     All_Closed()
     Any_One()
@@ -177,8 +185,8 @@ Setting_Buttons_Server <- function(input, output, session) {
   observeEvent(input$`All_Anaysis`, {
     All_Closed()
     Any_One()
-    
     Sys.sleep(0.1)
+    
     if (input$`All_Anaysis` == TRUE) {
       updateMaterialSwitch(session, "IKD", FALSE)
       updateMaterialSwitch(session, "Fiber_Area", FALSE)
